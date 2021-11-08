@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "486603242509",
+    "project_id": "eng-text-scanner",
+    "storage_bucket": "eng-text-scanner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486603242509:android:d1859795af957f79f22944",
+        "android_client_info": {
+          "package_name": "com.bitaam.textscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486603242509-23pipksscannha4lsgi1gc4osjc85fps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzNCpLDJ73flumwlKETadweAZW3VnYz5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486603242509-23pipksscannha4lsgi1gc4osjc85fps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

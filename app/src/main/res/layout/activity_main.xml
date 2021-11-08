@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textScanned"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:background="@drawable/textview_border"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@color/colorPrimaryDark"
+        android:layout_above="@id/rel"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/imgScanned"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:scrollbars="vertical"
+        android:layout_above="@id/rel"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/rel"
+        android:layout_above="@id/homeBan"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/captureBtn"
+            android:elevation="20dp"
+            android:layout_weight="1"
+            android:text="Insert Image"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/border_white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/scanBtn"
+            android:elevation="20dp"
+            android:text="Scan Image"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/border_white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:id="@+id/homeBan"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-8103108161786269/2111826701"/>
+
+
+
+
+</RelativeLayout>
